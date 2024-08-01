@@ -1,0 +1,188 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Roboto;
+}
+
+img {
+    object-fit: cover;
+}
+
+#navbar {
+    background-color: crimson;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid #000;
+    position: fixed;
+}
+
+#navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+#navbar a {
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 2rem 3rem;
+}
+
+#navbar a:last-of-type {
+    margin-right: 3rem;
+}
+
+#navbar a:hover {
+    background-color: var(--main-blue);
+}
+
+#welcome-section {
+    background: linear-gradient(90deg, rgb(44, 41, 41) 0%, rgb(44, 35, 35) 10%, rgb(8, 0, 0) 100%);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#welcome-section h1 {
+    font-size: 6rem;
+    color: #fff;
+}
+
+.red {
+    font-size:  3rem;
+    color: crimson;
+}
+
+.work {
+    background-color: var(--main-blue);
+    padding-bottom: 5rem;
+}
+
+.work h2 {
+    color: var(--main-white);
+    font-size: 4rem;
+    padding-top: 10rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.work span {
+    border-bottom: 2px solid #fff;
+}
+
+.projects {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project img {
+    height: 400px;
+    width: 400px;
+}
+
+.project a {
+    text-decoration: none;
+}
+
+.project-title {
+    color: var(--main-white);
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--main-gray);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.contact {
+    background-color: var(--main-gray);
+    color: var(--main-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 5px solid var(--main-red);
+}
+
+.contact h3 {
+    padding-top: 30rem;
+    padding-bottom: 0.5rem;
+    font-size: 6rem;
+}
+
+.contact span {
+    font-size: 2rem;
+    padding-bottom: 5rem;
+}
+
+.contact nav {
+    padding-bottom: 30rem;
+}
+
+.contact a {
+    color: var(--main-white);
+    font-size: 3rem;
+    text-decoration: none;
+    margin-right: 4rem;
+}
+
+.contact i {
+    margin-right: 1rem;
+}
+
+footer {
+    background-color: var(--main-gray);
+    color: var(--main-white);
+    padding: 3rem;
+}
+
+address {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+address p {
+    margin-right: 6rem;
+}
+
+address a {
+    color: var(--main-white);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .work h2 {
+        font-size: 3rem;
+    }
+
+    .contact h3 {
+        font-size: 3rem;
+    }
+
+    .contact a {
+        font-size: 2rem;
+    }
+}
